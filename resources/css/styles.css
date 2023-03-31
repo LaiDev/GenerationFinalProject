@@ -183,6 +183,11 @@ img
     border-radius: 5px;
 }
 
+.button:hover
+{
+    background-color: rgb(54, 54, 54);
+}
+
 .website-photos-info-right
 {
     gap: 45px;

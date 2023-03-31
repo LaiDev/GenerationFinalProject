@@ -260,6 +260,122 @@ img
 {
     align-self: flex-end;
 }
+/* styling for content page */
+
+.search-container {
+    float: center;
+    padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+left: 35%;
+width:200px;
+  }
+
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .btn:hover {background: #eee;}
+  
+  .Men {color: black;}
+
+  .Women {color: black;}
+
+  .Foryou {color: black;}
+  
+
+  .list-group-item-child1 {
+    position: relative;
+    width:250px;
+    
+  }
+
+  .list-group-item-child2 {
+    position: relative;
+    width: 250px;
+    left: 30%;
+    transform:translateY(-170px)
+
+  }
+
+  .list-group-item-child3 {
+    position: relative;
+    width: 250px;
+    left: 60%;
+    transform:translateY(-340px)
+  }
+
+  .list-group-item-child4 {
+    position: relative;
+    width: 250px;
+    transform:translateY(-250px)
+  }
+
+  .list-group-item-child5 {
+    position: relative;
+    width: 250px;
+    left: 30%;
+    transform:translateY(-420px)
+  }
+
+  .list-group-item-child6 {
+    position: relative;
+    width: 250px;
+    left: 60%;
+    transform:translateY(-590px)
+  }
+
+  .list-group-item-child7 {
+    position: relative;
+    width: 250px;
+    transform:translateY(-500px)
+  }
+
+  .list-group-item-child8 {
+    position: relative;
+    width: 250px;
+    left: 30%;
+    transform:translateY(-670px)
+  }
+
+  .list-group-item-child9 {
+    position: relative;
+    width: 250px;
+    left: 60%;
+    transform:translateY(-840px)
+  }
+
+  .list-group-item-child10 {
+    position: relative;
+    width: 250px;
+    transform:translateY(-750px)
+  }
+
+  .list-group-item-child11 {
+    position: relative;
+    width: 250px;
+    left: 30%;
+    transform:translateY(-920px)
+  }
+
+  .list-group-item-child12 {
+    position: relative;
+    width: 250px;
+    left: 60%;
+    transform:translateY(-1090px)
+  }
+
+  /* end styling for content page */
+
 footer
 {
     margin: 50px 0 20px;

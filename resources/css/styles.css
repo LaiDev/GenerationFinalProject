@@ -15,7 +15,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 0;
 }
 
 nav h4
@@ -450,6 +450,70 @@ width:200px;
     width: 250px;
     left: 60%;
     transform:translateY(-1090px)
+  }
+
+  /* Sign Up Section*/
+
+  .sign-up-section
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .sign-up-left h1
+  {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .sign-up-left,
+  .sign-up-right
+  {
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .sign-up-right form
+  {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 25px;
+  }
+
+  
+
+  label
+  {
+    font-size: 1.2rem;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password]
+  {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  form button
+  {
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+  }
+
+  form button:hover
+  {
+    background-color: #142033;
   }
 
   /* end styling for content page */

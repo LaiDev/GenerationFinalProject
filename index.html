@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,39 @@
     <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body>
+    
+    <header>
+        <nav>
+            <h4>Website name</h4>
+    
+          <ul class="nav-links">
+    
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+    
+            <li>
+                <a href="./about.html">About Us</a>
+            </li>
+            <li>
+                <a href="./posts.html"> Explore </a>
+            </li>
+            <li>
+                <a class = "nav-login-btn" href="#">Log In</a>
+            </li>
+            <li>
+                <a class = "nav-sign-up-btn" href="">Sign Up</a>
+            </li>
+
+          </ul>
+    </nav>
+    </header>
+
+    <main>
+      <section class="text">
+        <h1>Catchy Text</h1>
+        <h3>A slogan related to fashion</h3>
+      </section> 
     
     <section class="website-info" id = "photos-info">
         <div class="website-photos-info-left">
@@ -42,8 +74,31 @@
 
             
         </section>
+
+        <section class="sign-up-section">
+            <div class="sign-up-left">
+                <h1>Sign Up To Get Started</h1>
+            </div>
+            <div class="sign-up-right">
+                <form action="">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" name = "first-name" id = "first-name">
+
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" name = "last-name" id = "last-name">
+
+                    <label for="user-email">Email: </label>
+                    <input type="email" name="user-email" id="user-email">
+
+                    <label for="password">Password: </label>
+                    <input type="password" name = "password" id = "password">
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
         
-        
+    </main>
     
 </body>
 </html>

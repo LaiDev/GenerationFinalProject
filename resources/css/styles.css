@@ -15,7 +15,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 0;
 }
 
 nav h4
@@ -138,6 +138,89 @@ img
    line-height: 45px;
 }
 
+/* Styling for Home Page */
+/* Navigation Bar */
+  
+.homePage {
+    position: fixed;
+    z-index: 5;
+   /*top: -30.8em; */
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    width: 100%;
+    height: 125px;
+    padding-top: 1rem;
+    /*padding-bottom: 2rem;*/
+   border: 1px solid red;
+    background: url("../images/nav_background.webp") center center no-repeat;
+    background-size: cover;
+    font-family: "Proza Libre", serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #142033;
+    top:0;
+    /*transition: top 1s ease-in 250ms;*/
+  }
+  
+ /* nav:hover {
+    top: 0;
+  } */
+  
+  .homePage .logo {
+    margin-left:1px;
+    padding-right: 60px;
+  }
+  /*.hover-content nav {
+    margin-left: 3em;
+  } */
+  .homePage li {
+    list-style: none;
+    display:inline;
+    padding-right: 15px;
+    text-align:right;
+    margin-left: 60px;
+  }
+  .homePage ol {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .triangle {
+    
+    align-self: center;
+  }
+  /*nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 750ms ease-in-out 150ms;
+  
+  }
+  
+  nav a:hover
+   {
+    color: #639eff;
+
+  } */
+
+  .text {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    background: url("https://placehold.jp/50x50.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*position: relative;
+    top: 140px;
+    width:100%;*/
+    height: 50vh;
+  }
 
 .website-info
 {
@@ -185,7 +268,7 @@ img
 
 .button:hover
 {
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(44, 44, 44);
 }
 
 .website-photos-info-right
@@ -326,6 +409,123 @@ width:200px;
 .card-img-top {
     width: 300px;
 }
+
+  /* Sign Up Section*/
+
+  .sign-up-section
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .sign-up-left h1
+  {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .sign-up-left,
+  .sign-up-right
+  {
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .sign-up-right form
+  {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 25px;
+  }
+
+  
+
+  label
+  {
+    font-size: 1.2rem;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password]
+  {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  form button
+  {
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+  }
+
+  form button:hover
+  {
+    background-color: #142033;
+  }
+
+  /* Styling for the page where user creates their post */
+
+  #create-post-wrapper
+  {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #create-post
+  {
+    padding: 20px;
+    box-shadow: -8px 10px 5px black;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 80%;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  #image-to-post
+  {
+    height: 50%;
+    width: 100%;
+  }
+
+  #createImg
+  {
+    margin: 0 0 20px;
+  }
+
+  #createPostTitle
+  {
+    width: 100%;
+    padding: 10px 0;
+
+  }
+
+  #createPostDescription
+  {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0 10px;
+    resize: none;
+  }
+
 
   /* end styling for content page */
 

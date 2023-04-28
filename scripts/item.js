@@ -1,7 +1,7 @@
 // Initialize a new post Controller
 const postController = new PostController()
-//Create a function called addItemCard() with a paramater called item
 
+//Create a function called addItemCard() with a paramater called item
 function addItemCard(item) {
  
 
@@ -44,6 +44,55 @@ function addItemCard(item) {
 
 }
 
-//console.log(myInstance.items[0])
-//addItemCard(myInstance.items[0])
-//console.log(myInstance.items)
+
+//Adds the items to local storage
+function loadStorageSampleData(){
+    if(localStorage.getItem("items"))
+    {
+        const testItems = [{
+            title: "Test Post",
+            description: "This is a description",
+            imageSrc: "https://plchldr.co/i/500x250",
+            author : "Aalaizha",
+            datePosted: new Date()
+        },
+        {
+            title: "Test Post2",
+            description: "This is another description",
+            imageSrc: "https://plchldr.co/i/500x250",
+            author : "Person",
+            datePosted: new Date()
+        },
+        {
+            title: "Test Post3",
+            description: "This is a third description",
+            imageSrc: "https://plchldr.co/i/500x250",
+            author : "Person",
+            datePosted: new Date()
+        },
+        {
+            title: "Test Post3",
+            description: "This is a third description",
+            imageSrc: "https://plchldr.co/i/500x250",
+            author : "Person",
+            datePosted: new Date()
+        }]
+
+        //Adds items to the local storage. Stores the items as the value of a key called "items"
+        localStorage.setItem("items", JSON.stringify(testItems));
+    }
+}
+
+//Loops through the items array (in itemController.js), and for each item it creates a itemCard
+function loadCardsListFromItemsController(){
+    for(let i = 0; i < postController.items.length; i++)
+    {
+        const item = postController.items[i]
+        addItemCard(item)
+    }
+}
+
+
+loadStorageSampleData()
+postController.loadItemsFromLocalStorage();
+loadCardsListFromItemsController();

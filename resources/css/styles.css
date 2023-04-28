@@ -379,9 +379,21 @@ width:200px;
 
 /*styling posts section*/
 
-.row {
-display: flex;
-justify-content: space-between;
+#list-items {
+  justify-items: center;
+  display: grid;
+    
+  grid-template-columns: repeat(2, 1fr);
+  
+  grid-auto-rows: auto;
+  
+  grid-gap: 1rem;
+    
+  border-radius: 4px;
+    
+  padding: .5rem;
+
+  text-align: center;
 }
 
 .card {

@@ -376,86 +376,22 @@ width:200px;
   .Foryou {color: black;}
   
 
-  .list-group-item-child1 {
-    position: relative;
-    width:250px;
-    
-  }
 
-  .list-group-item-child2 {
-    position: relative;
-    width: 250px;
-    left: 30%;
-    transform:translateY(-170px)
+/*styling posts section*/
 
-  }
+.row {
+display: flex;
+justify-content: space-between;
+}
 
-  .list-group-item-child3 {
-    position: relative;
-    width: 250px;
-    left: 60%;
-    transform:translateY(-340px)
-  }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 320px;
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+}
 
-  .list-group-item-child4 {
-    position: relative;
-    width: 250px;
-    transform:translateY(-250px)
-  }
-
-  .list-group-item-child5 {
-    position: relative;
-    width: 250px;
-    left: 30%;
-    transform:translateY(-420px)
-  }
-
-  .list-group-item-child6 {
-    position: relative;
-    width: 250px;
-    left: 60%;
-    transform:translateY(-590px)
-  }
-
-  .list-group-item-child7 {
-    position: relative;
-    width: 250px;
-    transform:translateY(-500px)
-  }
-
-  .list-group-item-child8 {
-    position: relative;
-    width: 250px;
-    left: 30%;
-    transform:translateY(-670px)
-  }
-
-  .list-group-item-child9 {
-    position: relative;
-    width: 250px;
-    left: 60%;
-    transform:translateY(-840px)
-  }
-
-  .list-group-item-child10 {
-    position: relative;
-    width: 250px;
-    transform:translateY(-750px)
-  }
-
-  .list-group-item-child11 {
-    position: relative;
-    width: 250px;
-    left: 30%;
-    transform:translateY(-920px)
-  }
-
-  .list-group-item-child12 {
-    position: relative;
-    width: 250px;
-    left: 60%;
-    transform:translateY(-1090px)
-  }
 
   /* Sign Up Section*/
 

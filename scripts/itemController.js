@@ -28,17 +28,28 @@ class PostController{
         this.items.push(post)
         
    }   
+
+   //Gets every item in local storage and adds it to the items array
+   loadItemsFromLocalStorage(){
+    const storageItems = localStorage.getItem("items")
+    if(storageItems){
+        const items = JSON.parse(storageItems)
+        for(let i = 0; i < items.length; i++)
+        {
+            const item = items[i];
+            this.items.push(item)
+        }
+        //TODO load the items into the local items structure (this.items) 
+    }
+   }
 }
 
 //Creates a new instance of the PostController class
-const myInstance = new PostController();
+/* const myInstance = new PostController();
+myInstance.addItem("Test Post", "This is a description", "https://placehold.co/600x400/png","Aalaizha B", new Date())
 
 //Test Items being added to the items array
-myInstance.addItem("Test Post", "This is a description", "https://placehold.co/600x400/png","Aalaizha B", new Date())
-myInstance.addItem("Test Post2", "This is a description2", "https://placehold.co/600x400/png","Person", new Date())
-
-console.log(myInstance.items)
-
+myInstance.addItem("Test Post2", "This is a description2", "https://placehold.co/600x400/png","Person", new Date()) */
 
 
 

@@ -8,7 +8,7 @@
 body {
 
     background: url(/GenerationFinalProject/resources/images/women.png),url("/GenerationFinalProject/resources/images/blueshade.jpg"); 
-    background-blend-mode: lighten,multiply;
+    background-blend-mode: lighten;
 }
     
 .container {

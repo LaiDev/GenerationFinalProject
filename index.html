@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./scripts/signup.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
                 <a href="./posts.html"> Explore </a>
             </li>
             <li>
-                <a class = "nav-login-btn" href="#">Log In</a>
+                <a class = "nav-login-btn" href="./login.html">Log In</a>
             </li>
             <li>
                 <a class = "nav-sign-up-btn" href="#sign-up">Sign Up</a>
@@ -80,20 +81,20 @@
                 <h1>Sign Up To Get Started</h1>
             </div>
             <div class="sign-up-right">
-                <form action="">
+                <form action="" class="sign-up-form">
                     <label for="first-name">First Name: </label>
-                    <input type="text" name = "first-name" id = "first-name">
+                    <input type="text" name = "first-name" id = "first-name" placeholder="First Name" required>
 
                     <label for="last-name">Last Name: </label>
-                    <input type="text" name = "last-name" id = "last-name">
+                    <input type="text" name = "last-name" id = "last-name" placeholder="Last Name" required>
 
                     <label for="user-email">Email: </label>
-                    <input type="email" name="user-email" id="user-email">
+                    <input type="email" name="user-email" id="user-email" placeholder="Email" required>
 
                     <label for="password">Password: </label>
-                    <input type="password" name = "password" id = "password">
+                    <input type="password" name = "password" id = "password" placeholder="New Password" required>
 
-                    <button type="submit">Sign Up</button>
+                    <button type="submit" id="signup-btn">Sign Up</button>
                 </form>
             </div>
         </section>

@@ -27,3 +27,34 @@ addPostForm.addEventListener("submit", (e) => {
 
 });
 
+
+/* newPostImage.addEventListener("change", (event) => {
+    event.preventDefault();
+
+    const selectedFile = event.target.files[0];
+    console.log(selectedFile);
+    
+    const reader = new FileReader();
+
+               
+                // imgTag.title = selectedFile.name;
+                // console.log(imgTag.title);
+
+                reader.onload = function(event) {
+                    console.log(event.target.result);
+                    imgTag.src = event.target.result; 
+                    
+                };
+                reader.onerror = function(event)
+                {
+                    console.error("error reading this file:", event.target.error);
+                };
+
+                reader.readAsDataURL(selectedFile);
+                });
+
+                
+           
+                imgTag.addEventListener("load",() => {
+                        console.log("Image loaded successfully");
+                }); */

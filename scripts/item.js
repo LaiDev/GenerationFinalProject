@@ -45,7 +45,7 @@ function addItemCard(item) {
 }
 
 
-//Adds the items to local storage
+/* //Adds the items to local storage
 function loadStorageSampleData(){
     if(localStorage.getItem("items"))
     {
@@ -80,8 +80,13 @@ function loadStorageSampleData(){
 
         //Adds items to the local storage. Stores the items as the value of a key called "items"
         localStorage.setItem("items", JSON.stringify(testItems));
+        
+    
     }
-}
+    
+} */
+
+
 
 //Loops through the items array (in itemController.js), and for each item it creates a itemCard
 function loadCardsListFromItemsController(){
@@ -93,6 +98,8 @@ function loadCardsListFromItemsController(){
 }
 
 
-loadStorageSampleData()
+
+
+//loadStorageSampleData()
 postController.loadItemsFromLocalStorage();
 loadCardsListFromItemsController();

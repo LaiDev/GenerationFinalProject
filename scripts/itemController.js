@@ -16,6 +16,7 @@ class PostController{
 //In addItem, increment the currentId by 1
 
     addItem(title, description, imageSrc, author, datePosted){
+
         const post = {
          id : this.currentId++,
          title : title,
@@ -26,11 +27,14 @@ class PostController{
         };
 
         this.items.push(post)
-        
+
+        //Saves item to local storage
+        localStorage.setItem("items", JSON.stringify(this.items))
    }   
 
    //Gets every item in local storage and adds it to the items array
    loadItemsFromLocalStorage(){
+
     const storageItems = localStorage.getItem("items")
     if(storageItems){
         const items = JSON.parse(storageItems)
@@ -44,12 +48,6 @@ class PostController{
    }
 }
 
-//Creates a new instance of the PostController class
-/* const myInstance = new PostController();
-myInstance.addItem("Test Post", "This is a description", "https://placehold.co/600x400/png","Aalaizha B", new Date())
-
-//Test Items being added to the items array
-myInstance.addItem("Test Post2", "This is a description2", "https://placehold.co/600x400/png","Person", new Date()) */
 
 
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Post</title>
     <link rel="stylesheet" href="./resources/css/styles.css">
+    <script src="./scripts/itemController.js" defer></script>
     <script src = "./scripts/item-form.js" defer></script>
 </head>
 <body>
@@ -42,13 +43,13 @@
             
             <img src="https://plchldr.co/i/500x250?bg=f1dea1&fc=6040fb&text=Upload Your Image" alt="PlaceHolder Image" id = "image-to-post">
 
-            <input type="file" name="uploadedImg" id="uploadedImg" accept="image/png">
+            <input type="file" id="uploadedImg" accept="image/png">
 
             <label for="createPostTitle">Title: </label>
-            <input type="text" name="createPostTitle" id="createPostTitle" maxlength="50">
+            <input type="text" name="createPostTitle" id="createPostTitle" maxlength="50" required>
 
             <label for="createPostDescription">Description (Max Length: 250 Characters): </label>
-            <textarea name="createPostDescription" id = "createPostDescription" id="" cols="30" rows="5" max-rows="5" maxlength="250"></textarea>
+            <textarea name="createPostDescription" id = "createPostDescription" id="createPostDescription" cols="30" rows="5" max-rows="5" maxlength="250" required></textarea>
             
             <button type="submit">Post</button>
         </form>

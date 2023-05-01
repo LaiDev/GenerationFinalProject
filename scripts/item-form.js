@@ -1,6 +1,25 @@
 // Initialize a new post Controller
 let itemController = new PostController();
 
+let imgPreview = document.getElementById("image-to-post")
+let uploadedImg = document.getElementById("uploadedImg")
+
+/* uploadedImg.onchange = function(){
+    imgPreview.src = URL.createObjectURL(uploadedImg.files[0]);
+} */
+
+const createPostImage = document.getElementById("uploadedImg");
+createPostImage.addEventListener("change", () => {
+  const fileReader = new FileReader();
+
+  fileReader.onload = () => {
+    const base64Image = fileReader.result;
+    imgPreview.src = base64Image;
+  };
+
+  fileReader.readAsDataURL(createPostImage.files[0]);
+});
+
 //Add an event listener to the New Item form that listents for the submit event
 const addPostForm = document.getElementById("create-post");
 addPostForm.addEventListener("submit", (e) => {
@@ -11,7 +30,7 @@ addPostForm.addEventListener("submit", (e) => {
 
     const newPostTitle = document.getElementById("createPostTitle").value
     const newPostDescription = document.getElementById("createPostDescription").value
-    const newPostImage = document.getElementById("uploadedImg")
+    const newPostImage =  imgPreview.src
     const newPostDate = `${new Date().getUTCMonth() + 1}/${new Date().getUTCDay()}/${new Date().getFullYear()}`
   
     //Adds the post to the postController
@@ -28,33 +47,4 @@ addPostForm.addEventListener("submit", (e) => {
 });
 
 
-/* newPostImage.addEventListener("change", (event) => {
-    event.preventDefault();
 
-    const selectedFile = event.target.files[0];
-    console.log(selectedFile);
-    
-    const reader = new FileReader();
-
-               
-                // imgTag.title = selectedFile.name;
-                // console.log(imgTag.title);
-
-                reader.onload = function(event) {
-                    console.log(event.target.result);
-                    imgTag.src = event.target.result; 
-                    
-                };
-                reader.onerror = function(event)
-                {
-                    console.error("error reading this file:", event.target.error);
-                };
-
-                reader.readAsDataURL(selectedFile);
-                });
-
-                
-           
-                imgTag.addEventListener("load",() => {
-                        console.log("Image loaded successfully");
-                }); */

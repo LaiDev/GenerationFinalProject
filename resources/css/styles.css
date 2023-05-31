@@ -215,7 +215,8 @@ img
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
-    background: url("../images/Landingb.png");
+    background: url("../images/Landing.png");
+    border: 2px black solid;
     color: white;
     background-repeat: no-repeat;
     background-size: cover;

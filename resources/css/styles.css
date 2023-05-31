@@ -45,6 +45,8 @@ p
     line-height: 28px;
 }
 
+
+
 .container
 {
     display: flex;
@@ -213,7 +215,8 @@ img
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
-    background: url("https://placehold.jp/50x50.png");
+    background: url("../images/Landingb.png");
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     /*position: relative;
@@ -246,6 +249,7 @@ img
     display: flex;
    
 }
+
 
 .website-info p
 {
@@ -299,7 +303,7 @@ img
 .website-tips-info-left,
 .website-tips-info-right
 {
-    width: 80%;
+    width: 50%;
 
     display: flex;
     flex-direction: column;

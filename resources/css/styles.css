@@ -309,7 +309,7 @@ img
 
 .website-tips-info-right
 {
-    width: 45%;
+    width: 100%;
     align-items: flex-end;
     text-align: right;
     display: flex;
@@ -330,8 +330,8 @@ img
 
 .tips-example-post-pfp
 {
-    width: 50px;
-    border-radius: 100%;
+    width: 100px;
+    border-radius: 0%;
 }
 
 .post1

@@ -7,7 +7,8 @@
 body
 {
     margin: auto;
-    max-width: 70vw;
+    max-width: 1920px;
+    padding: 10px 100px;
 }
 
 nav
@@ -20,7 +21,7 @@ nav
 
 nav h4
 {
-    font-size: 2rem;
+    font-size: 40px;
 }
 
 nav ul
@@ -38,12 +39,31 @@ a
 {
     text-decoration: none;
     color: black;
+    font-size: 25px;
+    
 }
 
 p
 {
-    line-height: 28px;
+    line-height: 30px;
+    font-size: 25px;
 }
+
+h1
+{
+  font-size: 60px;
+}
+
+h2
+{
+  font-size: 45px;
+}
+
+h3
+{
+  font-size: 35px;;
+}
+
 
 
 
@@ -231,13 +251,14 @@ img
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    height: 900px;
 }
 
 .website-photos-info-left,
 .website-photos-info-right
 {
     width: 50%;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,10 +278,7 @@ img
     margin: 50px 0;
 }
 
-.website-info h1
-{
-    font-size: 3rem;
-}
+
 
 .button
 {
@@ -279,22 +297,56 @@ img
 .website-photos-info-right
 {
     gap: 45px;
+
+}
+.website-photos-info-right,
+.website-tips-info-left
+{
+  position: relative;
 }
 
 
+.website-tips-photos-img1,
+.website-photos-info-right-img1,
+.website-tips-photos-img2,
+.website-photos-info-right-img2
+{
+position: absolute;
+overflow: hidden;
 
+}
+
+.website-tips-photos-img1
+{
+  left: 0;
+}
+
+.website-tips-photos-img2
+{
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
 
 .website-photos-info-right-img1
+
 {
-    align-self: flex-start;
-    padding-left: 50px;
+  right: 0;
+  width: 80%;
 }
 
 .website-photos-info-right-img2
 {
-    align-self: flex-end;
-    padding-right: 50px;
+  bottom: 0;
+  left: 0;
 }
+
+.website-tips-photos-img1
+{
+height: auto;
+width: 80%;
+}
+
 
 #tips-info
 {
@@ -305,16 +357,17 @@ img
 .website-tips-info-right
 {
     width: 50%;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .website-tips-info-right
 {
-    width: 100%;
+  
     align-items: flex-end;
     text-align: right;
     display: flex;
@@ -325,19 +378,7 @@ img
     gap: 45px;
 }
 
-.tips-example-post
-{
-    border: 3px rgba(0, 0, 0, 0.61) solid;
-    width: 50%;
-    border-radius: 8px;
-    padding: 10px;
-}
 
-.tips-example-post-pfp
-{
-    width: 100px;
-    border-radius: 0%;
-}
 
 .post1
 {
@@ -421,7 +462,7 @@ width:200px;
   }
   .sign-up-left h1
   {
-    font-size: 3rem;
+
     text-align: center;
   }
 

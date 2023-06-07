@@ -7,7 +7,7 @@
 }
 body {
 
-    background: url(/GenerationFinalProject/resources/images/women.png),url("/GenerationFinalProject/resources/images/blueshade.jpg"); 
+    background: url("/resources/images/women.png"),url("/resources/images/blueshade.jpg"); 
     background-blend-mode: lighten;
 }
     

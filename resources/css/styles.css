@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
 *
 {
     margin: 0;
@@ -7,7 +9,8 @@
 body
 {
     margin: auto;
-    max-width: 70vw;
+    max-width: 1920px;
+    padding: 10px 100px;
 }
 
 nav
@@ -20,7 +23,7 @@ nav
 
 nav h4
 {
-    font-size: 2rem;
+    font-size: 40px;
 }
 
 nav ul
@@ -38,12 +41,33 @@ a
 {
     text-decoration: none;
     color: black;
+    font-size: 25px;
+    
 }
 
 p
 {
-    line-height: 28px;
+    line-height: 30px;
+    font-size: 25px;
 }
+
+h1
+{
+  font-size: 60px;
+}
+
+h2
+{
+  font-size: 45px;
+}
+
+h3
+{
+  font-size: 35px;;
+}
+
+
+
 
 .container
 {
@@ -69,7 +93,7 @@ p
     justify-content: center;
     text-align: center;
     
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
     margin:auto;
 }
 
@@ -83,9 +107,10 @@ img
     justify-content: center;
     padding: 150px;
     /*background: linear-gradient(135deg, rgb(130,218,245)45%, rgb(73,227,204)55% );*/
-    background: linear-gradient(217deg, rgba(230,0,0,.8), rgba(230,0,0,0) 70.71%), 
+    /* background: linear-gradient(217deg, rgba(230,0,0,.8), rgba(230,0,0,0) 70.71%), 
                 linear-gradient(127deg, rgba(0,224,0,.8), rgba(0,224,0,0) 70.71%), 
-                linear-gradient(336deg, rgba(0,0,205,.8), rgba(0,0,205,0) 70.71%);
+                linear-gradient(336deg, rgba(0,0,205,.8), rgba(0,0,205,0) 70.71%); */
+                border: 1px solid black;
 }
 
 
@@ -119,10 +144,11 @@ img
     justify-content: center;
     text-align: center;
     border-radius: 50%;
-    background: linear-gradient(250deg, rgb(246,196,146)45%, rgb(246,161,146)55% );
+    /* background: linear-gradient(250deg, rgb(246,196,146)45%, rgb(246,161,146)55% ); */
     margin:auto;
 }
     
+
 
 #secCBorder p {
     /*border: 1px solid black;
@@ -204,7 +230,7 @@ img
 
   } */
 
-  .text {
+  .hero-section {
     padding-top: 1px;
     padding-bottom: 1px;
     text-align: center;
@@ -213,27 +239,43 @@ img
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
-    background: url("https://placehold.jp/50x50.png");
+    background:linear-gradient(0deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../images/Landing.png");
+    border: 2px black solid;
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     /*position: relative;
     top: 140px;
     width:100%;*/
     height: 50vh;
+    
   }
+
+  .hero-section h1
+  {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 80px;
+  }
+  .hero-section h2
+  {
+    font-size: 40px;
+    
+  }
+
 
 .website-info
 {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    height: 900px;
 }
 
 .website-photos-info-left,
 .website-photos-info-right
 {
     width: 50%;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,15 +289,13 @@ img
    
 }
 
+
 .website-info p
 {
     margin: 50px 0;
 }
 
-.website-info h1
-{
-    font-size: 3rem;
-}
+
 
 .button
 {
@@ -274,22 +314,58 @@ img
 .website-photos-info-right
 {
     gap: 45px;
+
+}
+.website-photos-info-right,
+.website-tips-info-left
+{
+  position: relative;
 }
 
 
+.website-tips-photos-img1,
+.website-photos-info-right-img1,
+.website-tips-photos-img2,
+.website-photos-info-right-img2
+{
+position: absolute;
+overflow: hidden;
 
+}
+
+.website-tips-photos-img1
+{
+  left: 0;
+}
+
+.website-tips-photos-img2
+{
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 60%;
+  bottom: 0px;
+}
 
 .website-photos-info-right-img1
+
 {
-    align-self: flex-start;
-    padding-left: 50px;
+  right: 0;
+  width: 80%;
 }
 
 .website-photos-info-right-img2
 {
-    align-self: flex-end;
-    padding-right: 50px;
+  bottom: 0;
+  left: 0;
 }
+
+.website-tips-photos-img1
+{
+height: auto;
+width: 80%;
+}
+
 
 #tips-info
 {
@@ -299,17 +375,18 @@ img
 .website-tips-info-left,
 .website-tips-info-right
 {
-    width: 80%;
-
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .website-tips-info-right
 {
-    width: 100%;
+  
     align-items: flex-end;
     text-align: right;
     display: flex;
@@ -320,19 +397,7 @@ img
     gap: 45px;
 }
 
-.tips-example-post
-{
-    border: 3px rgba(0, 0, 0, 0.61) solid;
-    width: 50%;
-    border-radius: 8px;
-    padding: 10px;
-}
 
-.tips-example-post-pfp
-{
-    width: 100px;
-    border-radius: 0%;
-}
 
 .post1
 {
@@ -416,7 +481,7 @@ width:200px;
   }
   .sign-up-left h1
   {
-    font-size: 3rem;
+
     text-align: center;
   }
 

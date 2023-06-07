@@ -1,0 +1,11 @@
+body {
+
+    background: url("../images/wallpaper.jpg");
+}
+
+.img-bg {
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }

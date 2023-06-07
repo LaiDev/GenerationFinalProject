@@ -85,9 +85,8 @@ h3
 
 #sectionA p{
     display: flex;
-    border: 1px solid black;
     max-height: 1000px;
-    width: 50%;
+    width: 600%;
     
     align-items: center;
     justify-content: center;
@@ -123,8 +122,8 @@ img
 
 .about-us-heading
 {
-    font-size: 3rem;
-    transform: rotate(-90deg);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #sectionA,

@@ -46,7 +46,48 @@ class PostController{
         //TODO load the items into the local items structure (this.items) 
     }
    }
+
+   //save fnction 
+
+    addPost(post) {
+    // Retrieve existing posts from localStorage
+    let posts = JSON.parse(localStorage.getItem('posts')) || [];
+  
+    // Add the new post to the array
+    posts.push(post);
+  
+    // Store the updated posts back in localStorage
+    localStorage.setItem('posts', JSON.stringify(posts));
+  
+    // Call the save function
+    save();
 }
+
+
+
+   //Task 10 implement a new function called save that will POST
+   
+
+   save(name, description, imageUrl){
+    const data = { name,  description, imageUrl };
+
+    fetch('http://localhost:8080/post', {
+    method: 'POST', // or 'PUT'
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
+}
+
+  }
 
 
 

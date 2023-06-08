@@ -1,6 +1,6 @@
 body {
 
-    background: url("/resources//images/wallpaper.jpg"); 
+    background: url("../images/wallpaper.jpg");
 }
 
 .img-bg {
